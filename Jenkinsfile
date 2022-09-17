@@ -2,11 +2,11 @@ pipeline{
 
     agent {
         dockerfile {
-      filename: 'Dockerfile'
-      args: '--privileged'
+            filename  'Dockerfile'
+            args  '--privileged'
+        }      
     }
-       
-    }
+    
     stages{
         stage('Build') {
             steps{
