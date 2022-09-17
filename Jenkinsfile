@@ -2,6 +2,7 @@ pipeline{
 
     agent {
         dockerfile true
+        args "--privileged"
     }
     stages{
         stage('Build') {
