@@ -5,12 +5,7 @@ pipeline{
     }
     stage('Build') {
         steps{
-            sh 'npm run build'
+            sh 'node --version'
         }
-    }
-     stage('Test') {
-        steps{
-            sh 'npm run test'
-        }
-    }
+    } 
 }
